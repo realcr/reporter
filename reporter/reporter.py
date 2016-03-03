@@ -1,10 +1,8 @@
-
 class ReporterError(Exception): pass
 class InvalidInfoError(ReporterError): pass
 
 CURRENCY_KEYWORD = "currency"
 INNER_KEYWORD = "inner"
-
 NUM_SPACES = 4
 
 def canonicalize_amount(amount:float) -> str:
@@ -160,12 +158,8 @@ def calc_tree_mamount(path,head_name,currency,info,cur_depth):
 
 def totals_str(info):
     """
-    returns a string which is  a tree of total amounts.
+    returns a string which is a tree of total amounts.
     """
     res_str, res_multi_amount = calc_tree_mamount([],None,None,info,0)
     return res_str
-            
-
-if __name__ == '__main__':
-    print(totals_str(expenses))
 
