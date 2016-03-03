@@ -8,7 +8,6 @@ Usage
 
 First, build a json file of the form:
 
-    :::json
     {
         "Income":
         {
