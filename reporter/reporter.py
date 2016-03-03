@@ -147,10 +147,6 @@ def calc_tree_mamount(path,head_name,currency,info,cur_depth):
         sum_multi_amount = add_multi_amounts(\
                 sum_multi_amount,key_multi_amount)
 
-    # res_str = "{}".format(make_spaces(cur_depth))
-    # if head_name is not None:
-    #     res_str += "{}: {}".format(head_name,\
-    #             multi_amount_to_str(sum_multi_amount))
     res_str = ('\n'.join(res_lst))
 
     return res_str, sum_multi_amount
