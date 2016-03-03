@@ -74,6 +74,8 @@ def calc_tree_mamount(path,head_name,currency,info,cur_depth):
     """
     Return a tuple:
     (res_str, multi_amount)
+
+    (Recursive)
     """
 
     if not isinstance(info,dict):
